@@ -251,4 +251,9 @@
             padding-bottom: env(safe-area-inset-bottom, 20px);
         }
     </style>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 </body></html>
